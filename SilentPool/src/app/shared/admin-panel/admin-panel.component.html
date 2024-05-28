@@ -1,0 +1,12 @@
+<div class="divAdm">
+  <div class="informacoesSala" *ngFor="let dado of dados">
+      <ul>
+          <li class="listaInformacoesSala">Nome da sala: <strong>{{dado.name}}</strong></li>
+          <li class="listaInformacoesSala">Código da sala: <strong>{{dado.code}}</strong></li>
+      </ul>
+  </div>
+  <div class="divBotao">
+      <app-button typeBtn="primary" textBtn="Sair da sala"
+          routerLink="/"></app-button>
+  </div>
+</div>

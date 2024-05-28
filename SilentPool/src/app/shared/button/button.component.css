@@ -1,0 +1,49 @@
+button {
+    border: 0px;
+    height: 44px;
+    border-radius: var(--borderr);
+}
+
+.size-100{
+    width: 100px;
+}
+
+.size-410{
+    width: 410px;
+}
+
+
+
+.primary{
+    background-color: var(--blue-800);
+    color: rgb(253, 236, 236);
+    border: 1px solid;
+}
+.secondary{
+    background-color: rgba(255, 255, 255, 0.918);
+    color: rgb(22, 21, 21);
+    border: 1px solid #CBD5E1;
+}
+.tertiary{
+    background-color: #84CC16;
+    color: rgb(253, 236, 236);
+    border: 1px solid;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1025px){
+    .size-100{
+        width: 100px;
+    }
+    
+    .size-410{
+        width: 300px;
+    }
+
+    button {
+        border: 0px;
+        height: 30px;
+        font-size: 10px;
+        border-radius: var(--borderr);
+    }
+} 

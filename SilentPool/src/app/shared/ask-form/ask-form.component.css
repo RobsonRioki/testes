@@ -1,0 +1,62 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textoInfo {
+    margin: 5px;
+}
+.divInserirPergunta {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 83vh;
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--borderr);
+}
+.inputCategoria {
+    border: 1px solid #0000001A;
+    width: 97%;
+    border-radius: 4px;
+    margin: 10px;
+    display: flex;
+    height: 25px;
+    padding: 5px;
+}
+.inputPergunta {
+    border: 1px solid #0000001A;
+    border-radius: 4px;
+    margin: 10px;
+    width: 97%;
+    height: 45px;
+    padding: 5px;
+}
+.enviar-btn {
+    width: 90%;
+    display: flex;
+}
+.botaoEnviar {
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1025px) {
+    .inputCategoria {
+        width: 98%;
+    }
+
+    .inputPergunta{
+        width: 98%;
+    }
+    .botaoEnviar {
+        margin: px;
+    }
+
+}

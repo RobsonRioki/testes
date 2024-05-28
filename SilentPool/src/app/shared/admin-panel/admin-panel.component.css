@@ -1,0 +1,36 @@
+.divAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 20px 0 0 20px;
+    width: 90vw;
+    max-width: 50%;
+    /* width: 560px; */
+    justify-content: space-between;
+    
+    height: 100%;
+    /* margin-left: -50px; */
+    padding: 40px 0;
+}
+.listaInformacoesSala {
+    list-style-type: none;
+    font-weight: normal;
+}
+.informacoesSala {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+.informacoesSala {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+/* @media screen and (max-width: 1025px){
+.informacoesSala {
+    align-items: center;
+    margin-top: 0;
+}
+} */

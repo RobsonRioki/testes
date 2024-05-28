@@ -1,0 +1,15 @@
+<div>
+  <p class="textoInfo">Digite sua pergunta</p>
+  <div class="divInserirPergunta">
+
+      <input type="text" maxlength="10" placeholder="Categoria" class="inputCategoria"
+          [(ngModel)]="categoria">
+      <input type="text" maxlength="250" placeholder="Sua pergunta aqui" class="inputPergunta"
+          [(ngModel)]="pergunta">
+
+  </div>
+  <div class="enviar-btn">
+      <app-button typeBtn="primary" textBtn="Enviar" (click)="onInserirPergunta()"
+          class="botaoEnviar"></app-button>
+  </div>
+</div>

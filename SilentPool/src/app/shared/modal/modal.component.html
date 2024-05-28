@@ -1,0 +1,20 @@
+<section class="modal">
+    <div class="container-popout">
+        <h1 mat-dialog-title>Vamos criar uma nova sala de perguntas</h1>
+        <div class="opcoes">
+            <input type="text" placeholder="Nome da sala" [(ngModel)]="nomeSala">
+            <select name="" id="selecionar-duracao" [(ngModel)]="tempo" >
+                <option value="0">Tempo de uso da sala</option>
+                <option value="0:30:00">30min</option>
+                <option value="1:00:00">1h</option>
+                <option value="2:00:00">2h</option>
+            </select>
+        </div>
+        <div mat-dialog-content>
+        </div>
+        <div class="botoes-popout">
+            <app-button typeBtn="secondary"  textBtn="Cancelar" mat-dialog-close></app-button>
+            <app-button typeBtn="tertiary" textBtn="Criar" (click)="CriarSala()" mat-dialog-close></app-button>
+        </div>
+    </div>
+</section>

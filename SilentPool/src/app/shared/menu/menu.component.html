@@ -1,0 +1,17 @@
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>add</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="responder()">
+      <span>Marcar como respondido</span>
+    </button>
+    <button mat-menu-item (click)="ocultar()">
+      <span>Ocultar</span>
+    </button>
+    <button mat-menu-item (click)="desocultar()">
+      <span>Desocultar</span>
+    </button>
+  </mat-menu>
+  
+  

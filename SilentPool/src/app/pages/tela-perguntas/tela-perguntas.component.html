@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="divTituloSilentPoll">
+        <h1 class="tituloSilentPoll">SILENT P O O L</h1>
+    </div>
+
+    <section class="sectionSalaPerguntas">
+        <div class="divAdmin">
+            <app-admin-panel [dados]="dados"></app-admin-panel>
+        </div>
+        <div class="divPerguntas">
+        <app-ask-form (questionSubmitted)="onQuestionSubmitted($event)"></app-ask-form>
+            <p class="textoInfo">Últimas perguntas</p>
+            <ng-container *ngFor="let question of questions">
+                <app-container-pergunta [isAdmin]="false" (likeClicked)="like($event)" [question]="question" [questions]="questions">
+                </app-container-pergunta>
+            </ng-container>
+
+
+        </div>
+    </section>
+</div>
