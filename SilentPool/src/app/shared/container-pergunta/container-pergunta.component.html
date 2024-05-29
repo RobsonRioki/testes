@@ -1,5 +1,5 @@
-<div class="divPerguntas">
-<div class="divPergunta" [ngStyle]="{ 'background-color': question.isDeleted ? 'rgba(255, 0, 0, 0.2)' : (question.isReplied ? 'rgba(101, 101, 172, 0.2)' : 'white') }">
+<div class="divPergunta"
+    [ngStyle]="{ 'background-color': question.isDeleted ? 'rgba(255, 0, 0, 0.2)' : (question.isReplied ? 'rgba(101, 101, 172, 0.2)' : 'white') }">
     <div class="divP1">
         <p *ngIf="question.category">Categoria: {{question.category}}</p>
         <p>{{question.question}}</p>
@@ -17,5 +17,4 @@
         </div>
         <app-menu *ngIf="isAdmin" [id]="question.id" [questions]="questions"></app-menu>
     </div>
-</div>
 </div>

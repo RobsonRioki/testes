@@ -11,21 +11,6 @@
     gap: 15px;
 }
 
-.divPerguntas {
-    padding: 10px;
-    display: flex;
-    background-color: var(--grey-100);
-    /* max-width: 50vh; */
-    width: 90vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-width: 50%;
-    height: 85vh;
-    max-height: 100vh;
-    border-radius: 0 20px 20px 0;
-    flex-direction: column;
-}
-
 .divP1{
     max-width: 100%;
     word-break: break-all;
