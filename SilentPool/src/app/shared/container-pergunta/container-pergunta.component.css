@@ -44,7 +44,11 @@
 }
 
 .divIcones p {
-    margin: 10px;
+    margin: 5px;
+}
+.divIconeNumero {
+    display: flex;
+    flex-direction: row;
 }
 @media screen and (max-width: 1025px) {
     .divPerguntas {
