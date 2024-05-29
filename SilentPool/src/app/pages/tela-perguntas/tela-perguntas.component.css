@@ -33,7 +33,6 @@
     display: flex;
     justify-content: space-around;
     background-color: var(--grey-100);
-    /* background-color: red;  */
     width: 90vw;
     height: 85vh;
     border-radius: var(--borderr-20);
@@ -41,26 +40,7 @@
 
 }
 
-/* .divAdmin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FAFAFA;
-    border-radius: 20px 0 0 20px;
-    width: 90vw;
-    max-width: 50%; */
-    /* width: 560px; */
-    /* justify-content: space-between; */
-    /* height: 100%; */
-    /* margin-left: -50px; */
-    /* padding: 40px 0;
-} */
 
-/* .informacoesSala {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30%;
-} */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -78,155 +58,4 @@
     border: 3px solid transparent;
     background-clip: content-box;
     background-color: var(--blue-800);
-}
-
-.divPerguntas {
-    padding: 10px;
-    display: flex;
-    background-color: var(--grey-100);
-    /* max-width: 50vh; */
-    width: 90vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-width: 50%;
-    height: 85vh;
-    max-height: 100vh;
-    border-radius: 0 20px 20px 0;
-    flex-direction: column;
-}
-
-.textoInfo {
-    margin: 5px;
-}
-
-.divPergunta {
-    position: relative;
-    margin: 15px 0px;
-    display: flex;
-    max-width: 90vh;
-    width: auto;
-    height: fit-content;
-    justify-content: space-between;
-    padding: 10px;
-    font-weight: normal;
-    gap: 15px;
-}
-
-.divP1{
-    max-width: 100%;
-    word-break: break-all;
-}
-
-.status {
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
-    background-color: var(--grey-100);
-    border-radius: var(--borderr-20);
-    padding: 5px;
-    font-size: 20pt;
-    cursor: pointer;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.status:hover {
-    opacity: 0;
-    visibility: hidden;
-}
-
-
-.listaInformacoesSala {
-    list-style-type: none;
-    font-weight: normal;
-}
-
-.divIcones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.divIcones p {
-    margin: 10px;
-}
-
-mat-icon {
-    cursor: pointer;
-}
-
-
-
-@media screen and (max-width: 1025px) {
-
-    .divAdmin {
-        display: none;
-    }
-
-
-    .sectionSalaPerguntas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .divPerguntas {
-        max-width: 100%;
-        align-items: center;
-    }
-
-    .divPergunta {
-        margin: 15px 0px;
-        display: flex;
-        max-width: 100%;
-        width: 100%;
-        height: fit-content;
-        justify-content: space-between;
-        padding: 10px;
-        font-weight: normal;
-        gap: 8px;
-    }
-
-    .tituloAdmin {
-        margin-top: 0;
-        padding: 10px;
-    }
-
-    .informacoesSala {
-        align-items: center;
-        margin-top: 0;
-    }
-
-    .inputCategoria {
-        width: 98%;
-    }
-
-    .inputPergunta {
-        width: 98%;
-    }
-
-    .divInserirPergunta {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .info-btn {
-        display: flex;
-        justify-content: space-around;
-        gap: 40px;
-        padding: 15px;
-    }
-
-    .enviar-btn {
-        width: 90%;
-        display: flex;
-    }
-
-    .botaoEnviar {
-        margin: px;
-    }
 }
