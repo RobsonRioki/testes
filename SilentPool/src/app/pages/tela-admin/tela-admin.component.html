@@ -4,7 +4,7 @@
     </div>
     <section class="sectionSalaPerguntas">
         <div class="divAdmin">
-        <app-admin-panel [dados]="dados"></app-admin-panel>
+        <app-admin-panel [dados]="dados" (baixarPerguntas)="onBaixarPerguntas()"></app-admin-panel>
     </div>
         <div class="divPerguntas">
             <ng-container *ngFor="let question of questions">
