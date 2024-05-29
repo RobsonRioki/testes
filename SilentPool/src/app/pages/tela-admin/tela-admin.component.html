@@ -1,9 +1,11 @@
-<app-container>
+<div class="container">
     <div class="divTituloSilentPoll">
         <h1 class="tituloSilentPoll">SILENT P O O L</h1>
     </div>
     <section class="sectionSalaPerguntas">
+        <div class="divAdmin">
         <app-admin-panel [dados]="dados"></app-admin-panel>
+    </div>
         <div class="divPerguntas">
             <ng-container *ngFor="let question of questions">
                 <app-container-pergunta [isAdmin]="true" [question]="question" [questions]="questions">
@@ -11,4 +13,4 @@
             </ng-container>
         </div>
     </section>
-</app-container>
+</div>
