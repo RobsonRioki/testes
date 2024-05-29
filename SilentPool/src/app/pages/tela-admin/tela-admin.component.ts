@@ -105,20 +105,18 @@ export class TelaAdminComponent implements OnInit {
   }
 
   baixarCSV(data: any, filename: string) {
-    const replacer = (_key: string, value: any) => (value === null ? '' : value); 
+    const replacer = (_key: string, value: any) => (value === null ? '' : value);
     const header = Object.keys(data[0]);
     const csv = data.map((row: { [x: string]: any; }) =>
-      header
-        .map((fieldName) => JSON.stringify(row[fieldName], replacer))
-        .join(',')
+      header.map((fieldName) => JSON.stringify(row[fieldName], replacer)).join(',')
     );
     csv.unshift(header.join(','));
     const csvArray = csv.join('\r\n');
-  
+
     const a = document.createElement('a');
     const blob = new Blob([csvArray], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
-  
+
     a.href = url;
     a.download = `${filename}.csv`;
     a.click();
@@ -154,5 +152,4 @@ export class TelaAdminComponent implements OnInit {
       return b.vote - a.vote;
     });
   }
-  
 }
