@@ -12,7 +12,7 @@
     border-radius: 6px;
     flex-direction: column;
     margin-bottom: 20px;
-    max-width: 83vh;
+    /* max-width: 83vh; */
     background-color: white;
     border: 1px solid #E2E8F0;
     border-radius: var(--borderr);
@@ -45,15 +45,29 @@
 }
 
 @media screen and (max-width: 1025px) {
+
+    .divInserirPergunta {
+        display: flex;
+        width: 100%;
+        border-radius: 6px;
+        background-color: white;
+        border: 1px solid #E2E8F0;
+        border-radius: var(--borderr);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-inserir{
+        width: 86vw;
+        /* margin: 0; */
+       }
+
     .inputCategoria {
         width: 98%;
     }
 
     .inputPergunta{
         width: 98%;
-    }
-    .botaoEnviar {
-        margin: px;
     }
 
 }

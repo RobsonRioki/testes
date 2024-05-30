@@ -10,7 +10,7 @@
         <app-ask-form (questionSubmitted)="onQuestionSubmitted($event)"></app-ask-form>
             <p class="textoInfo">Últimas perguntas</p>
             <ng-container *ngFor="let question of questions">
-                <app-container-pergunta [isAdmin]="false" (likeClicked)="like($event)" [question]="question" [questions]="questions">
+                <app-container-pergunta [isAdmin]="false" (likeClicked)="like($event)" [question]="question" [questions]="questions" *ngIf="!question.isDeleted">
                 </app-container-pergunta>
             </ng-container>
         </div>
