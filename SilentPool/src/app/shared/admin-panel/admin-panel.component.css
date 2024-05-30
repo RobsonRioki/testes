@@ -34,7 +34,9 @@
     margin-top: 30%;
 }
 
-.botaoBaixar{display:none;}
+.esconder {
+    display: none;
+}
 
 @media screen and (max-width: 1025px) {
     .divAdm {
