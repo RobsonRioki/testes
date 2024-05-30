@@ -83,3 +83,67 @@
     background-clip: content-box;
     background-color: var(--blue-800);
 }
+@media screen and (max-width: 1025px){
+.divAdmin {
+    display:flex;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.sectionSalaPerguntas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divPerguntas {
+    max-width: 100%;
+    align-items: center;
+}
+
+.divPergunta {
+    margin: 15px 0px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: normal;
+    gap: 8px;
+}
+
+.tituloAdmin {
+    margin-top: 0;
+    padding: 10px;
+}
+
+.informacoesSala {
+    align-items: center;
+    margin-top: 0;
+}
+
+.inputCategoria {
+    width: 98%;
+}
+
+.inputPergunta {
+    width: 98%;
+}
+
+
+
+.info-btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 15px;
+}
+
+.enviar-btn {
+    width: 90%;
+    display: flex;
+}
+}
