@@ -16,6 +16,7 @@
     background-color: white;
     border: 1px solid #E2E8F0;
     border-radius: var(--borderr);
+    align-items: center;
 }
 .inputCategoria {
     border: 1px solid #0000001A;
@@ -55,6 +56,7 @@
         border-radius: var(--borderr);
         margin: 0;
         padding: 0;
+        align-items: center;
     }
 
     .container-inserir{
@@ -63,11 +65,11 @@
        }
 
     .inputCategoria {
-        width: 98%;
+        width: 94%;
     }
 
     .inputPergunta{
-        width: 98%;
+        width: 94%;
     }
 
 }
