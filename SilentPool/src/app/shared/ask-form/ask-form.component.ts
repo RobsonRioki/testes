@@ -13,5 +13,7 @@ export class AskFormComponent {
 
   onInserirPergunta() {
     this.questionSubmitted.emit({ categoria: this.categoria, pergunta: this.pergunta });
+    this.categoria = '';
+    this.pergunta = '';
   }
 }
